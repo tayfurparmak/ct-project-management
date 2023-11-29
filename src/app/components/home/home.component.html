@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-header">Projects</div>
   <div class="card-body p-0">
-    <table class="table">
+    <table class="table table-striped">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -20,8 +20,11 @@
           <td>{{ item.createdDate }}</td>
           <td>{{ item.usedTechnologies }}</td>
           <td>
-            <button class="btn btn-primary btn-sm">
-              Details
+            <button
+              class="btn btn-danger btn-sm"
+              (click)="remove(item.id)"
+            >
+              Remove
             </button>
           </td>
         </tr>
