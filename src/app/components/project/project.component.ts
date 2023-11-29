@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProjectService } from '../../services/project.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-project',
@@ -9,9 +10,14 @@ import { ProjectService } from '../../services/project.service';
 export class ProjectComponent {
   public project: any = {};
 
-  constructor(private projectService: ProjectService) {}
+  constructor(
+    private projectService: ProjectService,
+    private toastr: ToastrService
+  ) {}
 
   save() {
     this.projectService.Add(this.project);
+    this.project = {};
+    this.toastr.success('Saved!');
   }
 }
