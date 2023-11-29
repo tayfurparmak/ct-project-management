@@ -1,0 +1,31 @@
+<div class="card">
+  <div class="card-header">Projects</div>
+  <div class="card-body p-0">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Created Date</th>
+          <th scope="col">Used Technologies</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of projectService.Get()">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.createdDate }}</td>
+          <td>{{ item.usedTechnologies }}</td>
+          <td>
+            <button class="btn btn-primary btn-sm">
+              Details
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
