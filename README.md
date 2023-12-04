@@ -21,3 +21,8 @@ mv dist/ct-project-management/browser ./docs
 rm -rf dist
 
 ```
+
+```sh
+json-server --watch db.json
+ng serve
+```

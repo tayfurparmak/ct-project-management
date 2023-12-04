@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Site tasarlanacak",
+      "description": "Şöyle bi proje",
+      "createdDate": "2023-11-11",
+      "usedTechnologies": "Angular"
+    },
+    {
+      "id": 2,
+      "name": "Site tasarlanacak",
+      "description": "Şöyle bi proje",
+      "createdDate": "2023-11-11",
+      "usedTechnologies": "Angular"
+    }
+  ]
+}

@@ -7,11 +7,21 @@ import { ProjectService } from '../../services/project.service';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  public projects: any = [];
   constructor(public projectService: ProjectService) {}
 
-  public remove(id: number) {
+  async ngOnInit() {
+    this.reload();
+  }
+
+  async reload() {
+    this.projects = await this.projectService.Get();
+  }
+
+  public async remove(id: number) {
     if (confirm('Are you sure?')) {
-      this.projectService.Remove(id);
+      await this.projectService.Remove(id);
+      await this.reload();
     }
   }
 }
