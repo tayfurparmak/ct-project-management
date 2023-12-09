@@ -55,34 +55,10 @@
   ],
   "phonebooks": [
     {
-      "id": 1,
-      "name": "tayfur",
-      "surname": "parmak",
-      "gsm": "532-32-323-2"
-    },
-    {
-      "id": 2,
-      "name": "tayfur",
-      "surname": "parmak",
-      "gsm": "532-32-323-2"
-    },
-    {
-      "id": 3,
-      "name": "tayfur",
-      "surname": "parmak",
-      "gsm": "532-32-323-2"
-    },
-    {
-      "id": 4,
-      "name": "tayfur",
-      "surname": "parmak",
-      "gsm": "532-32-323-2"
-    },
-    {
-      "name": "necdet",
-      "surname": "dayi",
-      "gsm": "005222222222",
-      "id": 1702124575472
+      "name": "osman ",
+      "surname": "babasının oglyu\"",
+      "gsm": "05323231313",
+      "id": 1702125799821
     }
   ]
 }

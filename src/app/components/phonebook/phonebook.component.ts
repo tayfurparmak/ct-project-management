@@ -19,4 +19,14 @@ export class PhonebookComponent {
   async reload() {
     this.phonebooks = await this.phoneService.Get();
   }
+
+  public async remove(id: number) {
+    if (confirm('Are you sure?')) {
+      await this.phoneService.Remove(id);
+      await this.reload();
+    }
+  }
+
+
+
 }
