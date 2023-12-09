@@ -26,7 +26,4 @@ export class PhonebookComponent {
       await this.reload();
     }
   }
-
-
-
 }

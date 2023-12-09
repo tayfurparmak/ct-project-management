@@ -10,6 +10,14 @@
   </div>
   <div class="card-body">
     {{ item.gsm }}
-    <button class="btn btn-danger btn-sm" (click)="remove(item.id)">Delete</button>
+    <button class="btn btn-danger btn-sm" (click)="remove(item.id)">
+      Delete
+    </button>
+    <a
+      class="mx-1 btn btn-warning btn-sm"
+      [routerLink]="['/phonebook---update', item.id]"
+    >
+      Edit
+    </a>
   </div>
 </div>

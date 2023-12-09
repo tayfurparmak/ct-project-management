@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 import axios from 'axios';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PhoneService {
-
   private endpoint = 'http://localhost:3000/phonebooks';
   public async Get() {
     return (await axios.get(this.endpoint)).data;
@@ -16,7 +15,11 @@ export class PhoneService {
   public async Remove(id: number) {
     return await axios.delete(this.endpoint + '/' + id);
   }
-  public Update(id: number, phonebook: any) {
-    axios.put(this.endpoint + "/" + id, phonebook)
+  public async Update(id: number, phonebook: any) {
+    await axios.put(this.endpoint + '/' + id, phonebook);
+  }
+  public async GetById(id: number) {
+    const all = await this.Get();
+    return all.find((item: any) => item.id == id);
   }
 }

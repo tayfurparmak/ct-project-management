@@ -1,3 +1,4 @@
+import { PhonebookupdateComponent } from './components/phonebookupdate/phonebookupdate.component';
 import { PhonebookComponent } from './components/phonebook/phonebook.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'blog-add', component: BlogAddComponent },
   { path: 'phonebook', component: PhonebookComponent },
   { path: 'phonebook---add', component:PhonebookaddComponent},
+  { path: 'phonebook---update/:id', component:PhonebookupdateComponent}
 ];
 
 @NgModule({
