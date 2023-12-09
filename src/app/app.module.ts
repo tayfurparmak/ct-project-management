@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
+import { BlogComponent } from './components/blog/blog.component';
+import { BlogAddComponent } from './components/blog-add/blog-add.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { CommonModule } from '@angular/common';
     ProjectComponent,
     ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BlogComponent,
+    BlogAddComponent
   ],
   imports: [
     BrowserModule,

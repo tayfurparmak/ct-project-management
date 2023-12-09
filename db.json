@@ -14,5 +14,37 @@
       "createdDate": "2023-11-11",
       "usedTechnologies": "Angular"
     }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Merhaba blog",
+      "content": "...",
+      "createdDate": "2023-11-11"
+    },
+    {
+      "id": 2,
+      "title": "Angular nedir",
+      "content": "...2",
+      "createdDate": "2023-11-11"
+    },
+    {
+      "id": 3,
+      "title": "Frontendçi nasıl olunur",
+      "content": "...3",
+      "createdDate": "2023-11-11"
+    },
+    {
+      "title": "Başka bir blog yazısı",
+      "content": "içeriği",
+      "createdDate": "2023-01-01",
+      "id": 1702121631076
+    },
+    {
+      "title": "x",
+      "content": "x",
+      "createdDate": "2023-12-31",
+      "id": 1702121824196
+    }
   ]
 }

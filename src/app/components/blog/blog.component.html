@@ -1,0 +1,8 @@
+<div class="card m-3" *ngFor="let item of blogs">
+  <div class="card-header">
+    {{ item.title }}
+    |
+    {{ item.createdDate }}
+  </div>
+  <div class="card-body">{{ item.content }}</div>
+</div>
