@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { BlogComponent } from './components/blog/blog.component';
 import { BlogAddComponent } from './components/blog-add/blog-add.component';
+import { PhonebookComponent } from './components/phonebook/phonebook.component';
+import { PhonebookaddComponent } from './components/phonebookadd/phonebookadd.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { BlogAddComponent } from './components/blog-add/blog-add.component';
     HeaderComponent,
     FooterComponent,
     BlogComponent,
-    BlogAddComponent
+    BlogAddComponent,
+    PhonebookComponent,
+    PhonebookaddComponent
   ],
   imports: [
     BrowserModule,

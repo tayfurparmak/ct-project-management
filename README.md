@@ -26,3 +26,12 @@ rm -rf dist
 json-server --watch db.json
 ng serve
 ```
+
+
+
+phonebook
+
+name
+surname
+gsm
+

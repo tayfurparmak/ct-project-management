@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-header">Add phonebook</div>
+  <div class="card-body">
+    <div class="input-group mb-3">
+      <span class="input-group-text">name</span>
+      <input type="text" class="form-control" [(ngModel)]="phonebook.name" />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">surname</span>
+      <textarea class="form-control" [(ngModel)]="phonebook.surname"></textarea>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Gsm</span>
+      <input type="text" class="form-control" [(ngModel)]="phonebook.gsm" />
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-primary float-end" (click)="save()">Save</button>
+  </div>
+</div>
